@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
+import { FriendsComponent } from './friends.component';
+
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  directives: [FriendsComponent]
 })
 export class AppComponent {
   title = 'app works!';
