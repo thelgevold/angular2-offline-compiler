@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 app.use('/external', express.static(__dirname + '/node_modules'));
+app.use('/build', express.static(__dirname + '/build'));
 app.set("view options", {layout: false});
 app.use(express.static(__dirname + '/dist'));
 

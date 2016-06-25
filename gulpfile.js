@@ -6,11 +6,10 @@ gulp.task('bundle', function() {
 
     builder.loadConfig('./dist/system-config.js')
         .then(function(){
-            var outputFile = 'dist/bundle.min.js';
+            var outputFile = 'build/bundle.min.js';
             return builder.buildStatic('app', outputFile, {
                 minify: true,
-                mangle: true,
-                rollup: true
+                mangle: true
             });
         })
         .then(function(){

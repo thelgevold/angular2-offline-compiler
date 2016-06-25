@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { NgFor } from '@angular/common'
 
 @Component({
+  moduleId: module.id,
   selector: 'friends',
-  template: `<div *ngFor="let friend of friends"></div>`            
+  templateUrl: 'friends.component.html',
+  directives: [NgFor]            
 })
 export class FriendsComponent {
-  firends = ['Joe', 'Time', 'Jane', 'Tor'];        
+  friends = ['Joe', 'Time', 'Jane', 'Tor'];        
 }

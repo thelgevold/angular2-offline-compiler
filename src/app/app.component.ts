@@ -9,5 +9,5 @@ import { FriendsComponent } from './friends.component';
   directives: [FriendsComponent]
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Friends';
 }
