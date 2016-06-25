@@ -9,13 +9,15 @@ import * as import1 from '@angular/core/src/linker/view';
 import * as import2 from './app.component';
 import * as import3 from '@angular/core/src/linker/element';
 import * as import4 from './friends.component';
-import * as import5 from '@angular/core/src/linker/view_utils';
-import * as import6 from '@angular/core/src/di/injector';
-import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/change_detection/change_detection';
-import * as import9 from './friends.component.ngfactory';
-import * as import10 from '@angular/core/src/metadata/view';
-import * as import11 from '@angular/core/src/linker/component_factory';
+import * as import5 from './treeview/tree-view-demo';
+import * as import6 from '@angular/core/src/linker/view_utils';
+import * as import7 from '@angular/core/src/di/injector';
+import * as import8 from '@angular/core/src/linker/view_type';
+import * as import9 from '@angular/core/src/change_detection/change_detection';
+import * as import10 from './friends.component.ngfactory';
+import * as import11 from './treeview/tree-view-demo.ngfactory';
+import * as import12 from '@angular/core/src/metadata/view';
+import * as import13 from '@angular/core/src/linker/component_factory';
 const styles_AppComponent:any[] = [];
 var renderType_AppComponent:import0.RenderComponentType = null;
 class _View_AppComponent0 extends import1.AppView<import2.AppComponent> {
@@ -26,9 +28,12 @@ class _View_AppComponent0 extends import1.AppView<import2.AppComponent> {
   private _appEl_3:import3.AppElement;
   _FriendsComponent_3_4:import4.FriendsComponent;
   _text_4:any;
+  _el_5:any;
+  private _appEl_5:import3.AppElement;
+  _TreeViewDemo_5_4:import5.TreeViewDemo;
   private _expr_0:any;
-  constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_AppComponent0,renderType_AppComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+  constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement) {
+    super(_View_AppComponent0,renderType_AppComponent,import8.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import9.ChangeDetectionStrategy.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -37,38 +42,46 @@ class _View_AppComponent0 extends import1.AppView<import2.AppComponent> {
     this._text_2 = this.renderer.createText(parentRenderNode,'\n\n',null);
     this._el_3 = this.renderer.createElement(parentRenderNode,'friends',null);
     this._appEl_3 = new import3.AppElement(3,null,this,this._el_3);
-    var compView_3:any = import9.viewFactory_FriendsComponent0(this.viewUtils,this.injector(3),this._appEl_3);
+    var compView_3:any = import10.viewFactory_FriendsComponent0(this.viewUtils,this.injector(3),this._appEl_3);
     this._FriendsComponent_3_4 = new import4.FriendsComponent();
     this._appEl_3.initComponent(this._FriendsComponent_3_4,[],compView_3);
     compView_3.create(this._FriendsComponent_3_4,[],null);
-    this._text_4 = this.renderer.createText(parentRenderNode,'\n',null);
-    this._expr_0 = import8.uninitialized;
+    this._text_4 = this.renderer.createText(parentRenderNode,'\n\n',null);
+    this._el_5 = this.renderer.createElement(parentRenderNode,'treeview',null);
+    this._appEl_5 = new import3.AppElement(5,null,this,this._el_5);
+    var compView_5:any = import11.viewFactory_TreeViewDemo0(this.viewUtils,this.injector(5),this._appEl_5);
+    this._TreeViewDemo_5_4 = new import5.TreeViewDemo();
+    this._appEl_5.initComponent(this._TreeViewDemo_5_4,[],compView_5);
+    compView_5.create(this._TreeViewDemo_5_4,[],null);
+    this._expr_0 = import9.uninitialized;
     this.init([],[
       this._el_0,
       this._text_1,
       this._text_2,
       this._el_3,
-      this._text_4
+      this._text_4,
+      this._el_5
     ]
     ,[],[]);
     return null;
   }
   injectorGetInternal(token:any,requestNodeIndex:number,notFoundResult:any):any {
     if (((token === import4.FriendsComponent) && (3 === requestNodeIndex))) { return this._FriendsComponent_3_4; }
+    if (((token === import5.TreeViewDemo) && (5 === requestNodeIndex))) { return this._TreeViewDemo_5_4; }
     return notFoundResult;
   }
   detectChangesInternal(throwOnChange:boolean):void {
     this.detectContentChildrenChanges(throwOnChange);
-    const currVal_0:any = import5.interpolate(1,'\n  ',this.context.title,'\n');
-    if (import5.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
+    const currVal_0:any = import6.interpolate(1,'\n  ',this.context.title,'\n');
+    if (import6.checkBinding(throwOnChange,this._expr_0,currVal_0)) {
       this.renderer.setText(this._text_1,currVal_0);
       this._expr_0 = currVal_0;
     }
     this.detectViewChildrenChanges(throwOnChange);
   }
 }
-export function viewFactory_AppComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<import2.AppComponent> {
-  if ((renderType_AppComponent === null)) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html',0,import10.ViewEncapsulation.None,styles_AppComponent)); }
+export function viewFactory_AppComponent0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement):import1.AppView<import2.AppComponent> {
+  if ((renderType_AppComponent === null)) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html',0,import12.ViewEncapsulation.None,styles_AppComponent)); }
   return new _View_AppComponent0(viewUtils,parentInjector,declarationEl);
 }
 const styles_AppComponent_Host:any[] = [];
@@ -77,8 +90,8 @@ class _View_AppComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
   private _appEl_0:import3.AppElement;
   _AppComponent_0_4:import2.AppComponent;
-  constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_AppComponent_Host0,renderType_AppComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+  constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement) {
+    super(_View_AppComponent_Host0,renderType_AppComponent_Host,import8.ViewType.HOST,viewUtils,parentInjector,declarationEl,import9.ChangeDetectionStrategy.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.selectOrCreateHostElement('app-root',rootSelector,null);
@@ -95,8 +108,8 @@ class _View_AppComponent_Host0 extends import1.AppView<any> {
     return notFoundResult;
   }
 }
-function viewFactory_AppComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
+function viewFactory_AppComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
   if ((renderType_AppComponent_Host === null)) { (renderType_AppComponent_Host = viewUtils.createRenderComponentType('',0,null,styles_AppComponent_Host)); }
   return new _View_AppComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
-export const AppComponentNgFactory:import11.ComponentFactory<import2.AppComponent> = new import11.ComponentFactory<import2.AppComponent>('app-root',viewFactory_AppComponent_Host0,import2.AppComponent);
+export const AppComponentNgFactory:import13.ComponentFactory<import2.AppComponent> = new import13.ComponentFactory<import2.AppComponent>('app-root',viewFactory_AppComponent_Host0,import2.AppComponent);
