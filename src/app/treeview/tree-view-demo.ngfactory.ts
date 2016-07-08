@@ -30,7 +30,7 @@ class _View_TreeViewDemo0 extends import1.AppView<import2.TreeViewDemo> {
   _text_6:any;
   private _expr_0:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeViewDemo0,renderType_TreeViewDemo,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeViewDemo0,renderType_TreeViewDemo,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -78,14 +78,13 @@ export function viewFactory_TreeViewDemo0(viewUtils:import5.ViewUtils,parentInje
   if ((renderType_TreeViewDemo === null)) { (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template',0,import10.ViewEncapsulation.None,styles_TreeViewDemo)); }
   return new _View_TreeViewDemo0(viewUtils,parentInjector,declarationEl);
 }
-const styles_TreeViewDemo_Host:any[] = [];
 var renderType_TreeViewDemo_Host:import0.RenderComponentType = null;
 class _View_TreeViewDemo_Host0 extends import1.AppView<any> {
   _el_0:any;
   private _appEl_0:import3.AppElement;
   _TreeViewDemo_0_4:import2.TreeViewDemo;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeViewDemo_Host0,renderType_TreeViewDemo_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeViewDemo_Host0,renderType_TreeViewDemo_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.selectOrCreateHostElement('treeview',rootSelector,null);
@@ -103,7 +102,7 @@ class _View_TreeViewDemo_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_TreeViewDemo_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
-  if ((renderType_TreeViewDemo_Host === null)) { (renderType_TreeViewDemo_Host = viewUtils.createRenderComponentType('',0,null,styles_TreeViewDemo_Host)); }
+  if ((renderType_TreeViewDemo_Host === null)) { (renderType_TreeViewDemo_Host = viewUtils.createRenderComponentType('',0,null,[])); }
   return new _View_TreeViewDemo_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const TreeViewDemoNgFactory:import11.ComponentFactory<import2.TreeViewDemo> = new import11.ComponentFactory<import2.TreeViewDemo>('treeview',viewFactory_TreeViewDemo_Host0,import2.TreeViewDemo);

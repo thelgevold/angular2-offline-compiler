@@ -1,10 +1,10 @@
-declare var System: any;
-
 System.config({
     map: {
-        'rxjs': 'node_modules/rxjs',
-        '@angular': 'node_modules/@angular',
-        'app': 'dist'
+        'rxjs': 'node_modules/rxjs-es',
+        '@angular/core': 'node_modules/@angular/core/esm',
+        '@angular/common': 'node_modules/@angular/common/esm',
+        '@angular/platform-browser': 'node_modules/@angular/platform-browser/esm',
+        'app': 'es6'
     },
     packages: {
         'app': {

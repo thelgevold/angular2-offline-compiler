@@ -3,7 +3,6 @@ import {NgIf, NgFor} from '@angular/common';
 import {Directory} from './directory';
 
 @Component({
-    moduleId: module.id,
     selector: 'tree-view',
     templateUrl: './tree-view.html',
     directives: [TreeView, NgIf, NgFor]

@@ -33,7 +33,7 @@ class _View_AppComponent0 extends import1.AppView<import2.AppComponent> {
   _TreeViewDemo_5_4:import5.TreeViewDemo;
   private _expr_0:any;
   constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement) {
-    super(_View_AppComponent0,renderType_AppComponent,import8.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import9.ChangeDetectionStrategy.CheckAlways);
+    super(_View_AppComponent0,renderType_AppComponent,import8.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import9.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -84,14 +84,13 @@ export function viewFactory_AppComponent0(viewUtils:import6.ViewUtils,parentInje
   if ((renderType_AppComponent === null)) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html',0,import12.ViewEncapsulation.None,styles_AppComponent)); }
   return new _View_AppComponent0(viewUtils,parentInjector,declarationEl);
 }
-const styles_AppComponent_Host:any[] = [];
 var renderType_AppComponent_Host:import0.RenderComponentType = null;
 class _View_AppComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
   private _appEl_0:import3.AppElement;
   _AppComponent_0_4:import2.AppComponent;
   constructor(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement) {
-    super(_View_AppComponent_Host0,renderType_AppComponent_Host,import8.ViewType.HOST,viewUtils,parentInjector,declarationEl,import9.ChangeDetectionStrategy.CheckAlways);
+    super(_View_AppComponent_Host0,renderType_AppComponent_Host,import8.ViewType.HOST,viewUtils,parentInjector,declarationEl,import9.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.selectOrCreateHostElement('app-root',rootSelector,null);
@@ -109,7 +108,7 @@ class _View_AppComponent_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_AppComponent_Host0(viewUtils:import6.ViewUtils,parentInjector:import7.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
-  if ((renderType_AppComponent_Host === null)) { (renderType_AppComponent_Host = viewUtils.createRenderComponentType('',0,null,styles_AppComponent_Host)); }
+  if ((renderType_AppComponent_Host === null)) { (renderType_AppComponent_Host = viewUtils.createRenderComponentType('',0,null,[])); }
   return new _View_AppComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const AppComponentNgFactory:import13.ComponentFactory<import2.AppComponent> = new import13.ComponentFactory<import2.AppComponent>('app-root',viewFactory_AppComponent_Host0,import2.AppComponent);

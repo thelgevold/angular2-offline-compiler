@@ -31,7 +31,7 @@ class _View_TreeView0 extends import1.AppView<import2.TreeView> {
   _text_4:any;
   private _expr_0:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeView0,renderType_TreeView,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeView0,renderType_TreeView,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -91,7 +91,7 @@ class _View_TreeView1 extends import1.AppView<any> {
   private _expr_4:any;
   private _expr_5:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeView1,renderType_TreeView,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeView1,renderType_TreeView,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.renderer.createElement(null,'li',null);
@@ -191,7 +191,7 @@ class _View_TreeView2 extends import1.AppView<any> {
   private _expr_0:any;
   private _expr_1:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeView2,renderType_TreeView,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeView2,renderType_TreeView,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.renderer.createElement(null,'div',null);
@@ -257,7 +257,7 @@ class _View_TreeView3 extends import1.AppView<any> {
   _text_1:any;
   private _expr_0:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeView3,renderType_TreeView,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeView3,renderType_TreeView,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.renderer.createElement(null,'li',null);
@@ -283,14 +283,13 @@ class _View_TreeView3 extends import1.AppView<any> {
 function viewFactory_TreeView3(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
   return new _View_TreeView3(viewUtils,parentInjector,declarationEl);
 }
-const styles_TreeView_Host:any[] = [];
 var renderType_TreeView_Host:import0.RenderComponentType = null;
 class _View_TreeView_Host0 extends import1.AppView<any> {
   _el_0:any;
   private _appEl_0:import3.AppElement;
   _TreeView_0_4:import2.TreeView;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_TreeView_Host0,renderType_TreeView_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_TreeView_Host0,renderType_TreeView_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.selectOrCreateHostElement('tree-view',rootSelector,null);
@@ -308,7 +307,7 @@ class _View_TreeView_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_TreeView_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
-  if ((renderType_TreeView_Host === null)) { (renderType_TreeView_Host = viewUtils.createRenderComponentType('',0,null,styles_TreeView_Host)); }
+  if ((renderType_TreeView_Host === null)) { (renderType_TreeView_Host = viewUtils.createRenderComponentType('',0,null,[])); }
   return new _View_TreeView_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const TreeViewNgFactory:import13.ComponentFactory<import2.TreeView> = new import13.ComponentFactory<import2.TreeView>('tree-view',viewFactory_TreeView_Host0,import2.TreeView);

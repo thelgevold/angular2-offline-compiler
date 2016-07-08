@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 
 app.use('/external', express.static(__dirname + '/node_modules'));
-app.use('/build', express.static(__dirname + '/build'));
+app.use('/es5', express.static(__dirname + '/es5'));
 app.set("view options", {layout: false});
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/src'));
 
 app.get('/', function (req, res) {
    res.render('index.html');

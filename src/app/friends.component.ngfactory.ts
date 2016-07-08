@@ -26,7 +26,7 @@ class _View_FriendsComponent0 extends import1.AppView<import2.FriendsComponent> 
   _NgFor_0_6:import4.NgFor;
   private _expr_0:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_FriendsComponent0,renderType_FriendsComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_FriendsComponent0,renderType_FriendsComponent,import7.ViewType.COMPONENT,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     const parentRenderNode:any = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -63,7 +63,7 @@ class _View_FriendsComponent1 extends import1.AppView<any> {
   _text_1:any;
   private _expr_0:any;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_FriendsComponent1,renderType_FriendsComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_FriendsComponent1,renderType_FriendsComponent,import7.ViewType.EMBEDDED,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.renderer.createElement(null,'div',null);
@@ -89,14 +89,13 @@ class _View_FriendsComponent1 extends import1.AppView<any> {
 function viewFactory_FriendsComponent1(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
   return new _View_FriendsComponent1(viewUtils,parentInjector,declarationEl);
 }
-const styles_FriendsComponent_Host:any[] = [];
 var renderType_FriendsComponent_Host:import0.RenderComponentType = null;
 class _View_FriendsComponent_Host0 extends import1.AppView<any> {
   _el_0:any;
   private _appEl_0:import3.AppElement;
   _FriendsComponent_0_4:import2.FriendsComponent;
   constructor(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement) {
-    super(_View_FriendsComponent_Host0,renderType_FriendsComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectionStrategy.CheckAlways);
+    super(_View_FriendsComponent_Host0,renderType_FriendsComponent_Host,import7.ViewType.HOST,viewUtils,parentInjector,declarationEl,import8.ChangeDetectorStatus.CheckAlways);
   }
   createInternal(rootSelector:string):import3.AppElement {
     this._el_0 = this.selectOrCreateHostElement('friends',rootSelector,null);
@@ -114,7 +113,7 @@ class _View_FriendsComponent_Host0 extends import1.AppView<any> {
   }
 }
 function viewFactory_FriendsComponent_Host0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<any> {
-  if ((renderType_FriendsComponent_Host === null)) { (renderType_FriendsComponent_Host = viewUtils.createRenderComponentType('',0,null,styles_FriendsComponent_Host)); }
+  if ((renderType_FriendsComponent_Host === null)) { (renderType_FriendsComponent_Host = viewUtils.createRenderComponentType('',0,null,[])); }
   return new _View_FriendsComponent_Host0(viewUtils,parentInjector,declarationEl);
 }
 export const FriendsComponentNgFactory:import12.ComponentFactory<import2.FriendsComponent> = new import12.ComponentFactory<import2.FriendsComponent>('friends',viewFactory_FriendsComponent_Host0,import2.FriendsComponent);
