@@ -7,7 +7,8 @@
     "codegen": "./node_modules/.bin/ngc -p ./src",
     "es6-bundle": "gulp bundle",
     "es5-bundle": "./node_modules/.bin/tsc build/bundle.min.js --target es5 --allowJs --outDir es5",
-    "build": "npm run codegen && npm run es6-bundle && npm run es5-bundle && node server.js"
+    "minify": "./node_modules/.bin/uglifyjs --screw-ie8 --compress --mangle -- es5/bundle.min.js > es5/es5.min.js",
+    "build": "npm run codegen && npm run es6-bundle && npm run es5-bundle && npm run minify && node server.js"
   },
   "dependencies": {
     "@angular/common": "2.0.0-rc.4",
@@ -23,6 +24,7 @@
     "reflect-metadata": "0.1.3",
     "rxjs-es": "5.0.0-beta.6",
     "systemjs": "0.19.26",
+    "uglify-js": "2.7.0",
     "zone.js": "0.6.12"
   },
   "devDependencies": {
