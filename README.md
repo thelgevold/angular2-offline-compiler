@@ -1,8 +1,14 @@
 # OfflineCompiler
 
-To compile and launch the server:
+Compile and start the server:
 
-npm run build
+SystemJS Builder
+
+npm run build-with-systemjs-builder
+
+Rollup (Work in progress)
+
+npm run build-with-rollup
 
 
 

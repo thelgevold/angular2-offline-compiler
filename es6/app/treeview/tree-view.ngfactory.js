@@ -281,4 +281,3 @@ function viewFactory_TreeView_Host0(viewUtils, parentInjector, declarationEl) {
     return new _View_TreeView_Host0(viewUtils, parentInjector, declarationEl);
 }
 export const TreeViewNgFactory = new import13.ComponentFactory('tree-view', viewFactory_TreeView_Host0, import2.TreeView);
-//# sourceMappingURL=/app/treeview/tree-view.ngfactory.js.map

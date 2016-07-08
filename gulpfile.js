@@ -6,10 +6,10 @@ gulp.task('bundle', function() {
 
     builder.loadConfig('./src/system-config.js')
         .then(function(){
-            var outputFile = 'build/bundle.min.js';
+            var outputFile = 'es6/tree-shaken.js';
             return builder.buildStatic('app', outputFile, {
-                minify: true,
-                mangle: true,
+                minify: false,
+                mangle: false,
                 rollup: true
             });
         })

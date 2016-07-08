@@ -14,4 +14,3 @@ TreeView.decorators = [
 TreeView.propDecorators = {
     'directories': [{ type: Input },],
 };
-//# sourceMappingURL=/app/treeview/tree-view.js.map

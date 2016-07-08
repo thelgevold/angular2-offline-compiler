@@ -26,4 +26,3 @@ export class Directory {
         });
     }
 }
-//# sourceMappingURL=/app/treeview/directory.js.map
