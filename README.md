@@ -1,8 +1,8 @@
 # OfflineCompiler
 
-To compile and launch the server run this:
+To compile and launch the server:
 
-./node_modules/.bin/ngc -p ./src && ng build && gulp bundle && node server.js
+npm run build
 
 
 
