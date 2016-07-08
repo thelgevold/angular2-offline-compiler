@@ -1,8 +1,7 @@
 {
   "name": "offline-compiler",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
-  "angular-cli": {},
   "private": true,
   "scripts": {
     "codegen": "./node_modules/.bin/ngc -p ./src",
