@@ -21885,7 +21885,7 @@ catch (e) {
         var import1, import2, import3, import4, import5, import7, import8, import9, import10, import11, import12, import13, styles_TreeView, renderType_TreeView, _View_TreeView0, _View_TreeView1, _View_TreeView2, _View_TreeView3, renderType_TreeView_Host, _View_TreeView_Host0, TreeViewNgFactory;
         function viewFactory_TreeView0(viewUtils, parentInjector, declarationEl) {
             if ((renderType_TreeView === null)) {
-                (renderType_TreeView = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view.html', 0, import11.ViewEncapsulation.None, styles_TreeView));
+                (renderType_TreeView = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/treeview/tree-view.html', 0, import11.ViewEncapsulation.None, styles_TreeView));
             }
             return new _View_TreeView0(viewUtils, parentInjector, declarationEl);
         }
@@ -22165,7 +22165,7 @@ catch (e) {
         var import1, import2, import3, import4, import5, import7, import8, import9, import10, import11, styles_TreeViewDemo, renderType_TreeViewDemo, _View_TreeViewDemo0, renderType_TreeViewDemo_Host, _View_TreeViewDemo_Host0, TreeViewDemoNgFactory;
         function viewFactory_TreeViewDemo0(viewUtils, parentInjector, declarationEl) {
             if ((renderType_TreeViewDemo === null)) {
-                (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template', 0, import10.ViewEncapsulation.None, styles_TreeViewDemo));
+                (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template', 0, import10.ViewEncapsulation.None, styles_TreeViewDemo));
             }
             return new _View_TreeViewDemo0(viewUtils, parentInjector, declarationEl);
         }
@@ -27447,7 +27447,7 @@ catch (e) {
         var import1, import2, import3, import4, import5, import7, import8, import9, import10, import11, styles_AppComponent, renderType_AppComponent, _View_AppComponent0, renderType_AppComponent_Host, _View_AppComponent_Host0, AppComponentNgFactory;
         function viewFactory_AppComponent0(viewUtils, parentInjector, declarationEl) {
             if ((renderType_AppComponent === null)) {
-                (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
+                (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
             }
             return new _View_AppComponent0(viewUtils, parentInjector, declarationEl);
         }

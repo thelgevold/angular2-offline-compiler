@@ -13,6 +13,7 @@
   },
 
   "files": [
-    "main.ts"
+    "main.ts",
+    "app/app.component.ts"
   ]
 }

@@ -65,7 +65,7 @@ class _View_AppComponent0 extends import1.AppView<import2.AppComponent> {
   }
 }
 export function viewFactory_AppComponent0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<import2.AppComponent> {
-  if ((renderType_AppComponent === null)) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html',0,import10.ViewEncapsulation.None,styles_AppComponent)); }
+  if ((renderType_AppComponent === null)) { (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/app.component.html',0,import10.ViewEncapsulation.None,styles_AppComponent)); }
   return new _View_AppComponent0(viewUtils,parentInjector,declarationEl);
 }
 var renderType_AppComponent_Host:import0.RenderComponentType = null;

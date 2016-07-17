@@ -23430,7 +23430,7 @@ $__System.register("e1", ["d8", "46", "d9", "5c", "b5", "d2", "a6", "a2", "e2", 
       TreeViewNgFactory;
   function viewFactory_TreeView0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_TreeView === null)) {
-      (renderType_TreeView = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view.html', 0, import11.ViewEncapsulation.None, styles_TreeView));
+      (renderType_TreeView = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/treeview/tree-view.html', 0, import11.ViewEncapsulation.None, styles_TreeView));
     }
     return new _View_TreeView0(viewUtils, parentInjector, declarationEl);
   }
@@ -23726,7 +23726,7 @@ $__System.register("e3", ["d8", "44", "d9", "46", "b5", "d2", "a6", "e1", "8d", 
       TreeViewDemoNgFactory;
   function viewFactory_TreeViewDemo0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_TreeViewDemo === null)) {
-      (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template', 0, import10.ViewEncapsulation.None, styles_TreeViewDemo));
+      (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template', 0, import10.ViewEncapsulation.None, styles_TreeViewDemo));
     }
     return new _View_TreeViewDemo0(viewUtils, parentInjector, declarationEl);
   }
@@ -29319,7 +29319,7 @@ $__System.register("f0", ["d8", "43", "d9", "44", "b5", "d2", "a6", "e3", "8d", 
       AppComponentNgFactory;
   function viewFactory_AppComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_AppComponent === null)) {
-      (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
+      (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
     }
     return new _View_AppComponent0(viewUtils, parentInjector, declarationEl);
   }

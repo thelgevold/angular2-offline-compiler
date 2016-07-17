@@ -65,7 +65,7 @@ class _View_TreeView0 extends import1.AppView {
 }
 export function viewFactory_TreeView0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_TreeView === null)) {
-        (renderType_TreeView = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view.html', 0, import11.ViewEncapsulation.None, styles_TreeView));
+        (renderType_TreeView = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/treeview/tree-view.html', 0, import11.ViewEncapsulation.None, styles_TreeView));
     }
     return new _View_TreeView0(viewUtils, parentInjector, declarationEl);
 }

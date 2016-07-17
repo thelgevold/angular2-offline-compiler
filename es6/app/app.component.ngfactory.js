@@ -57,7 +57,7 @@ class _View_AppComponent0 extends import1.AppView {
 }
 export function viewFactory_AppComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_AppComponent === null)) {
-        (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
+        (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
     }
     return new _View_AppComponent0(viewUtils, parentInjector, declarationEl);
 }

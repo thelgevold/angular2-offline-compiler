@@ -75,7 +75,7 @@ class _View_TreeViewDemo0 extends import1.AppView<import2.TreeViewDemo> {
   }
 }
 export function viewFactory_TreeViewDemo0(viewUtils:import5.ViewUtils,parentInjector:import6.Injector,declarationEl:import3.AppElement):import1.AppView<import2.TreeViewDemo> {
-  if ((renderType_TreeViewDemo === null)) { (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template',0,import10.ViewEncapsulation.None,styles_TreeViewDemo)); }
+  if ((renderType_TreeViewDemo === null)) { (renderType_TreeViewDemo = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/treeview/tree-view-demo.ts class TreeViewDemo - inline template',0,import10.ViewEncapsulation.None,styles_TreeViewDemo)); }
   return new _View_TreeViewDemo0(viewUtils,parentInjector,declarationEl);
 }
 var renderType_TreeViewDemo_Host:import0.RenderComponentType = null;
