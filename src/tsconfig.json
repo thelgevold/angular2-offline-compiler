@@ -14,6 +14,6 @@
 
   "files": [
     "main.ts",
-    "app/app.component.ts"
+    "app/app.module.ts"
   ]
 }

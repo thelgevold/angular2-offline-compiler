@@ -8,8 +8,8 @@ gulp.task('bundle', function() {
         .then(function(){
             var outputFile = 'es6/tree-shaken.js';
             return builder.buildStatic('app', outputFile, {
-                minify: false,
-                mangle: false,
+                minify: true,
+                mangle: true,
                 rollup: true
             });
         })

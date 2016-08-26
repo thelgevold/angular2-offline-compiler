@@ -4,20 +4,49 @@
  */
 /* tslint:disable */
 import * as import1 from '@angular/core/src/linker/view';
-import * as import2 from './app.component';
-import * as import3 from '@angular/core/src/linker/element';
-import * as import4 from './treeview/tree-view-demo';
-import * as import5 from '@angular/core/src/linker/view_utils';
-import * as import7 from '@angular/core/src/linker/view_type';
-import * as import8 from '@angular/core/src/change_detection/change_detection';
-import * as import9 from './treeview/tree-view-demo.ngfactory';
-import * as import10 from '@angular/core/src/metadata/view';
-import * as import11 from '@angular/core/src/linker/component_factory';
+import * as import2 from '@angular/core/src/linker/element';
+import * as import3 from './app.component';
+import * as import4 from '@angular/core/src/linker/view_utils';
+import * as import6 from '@angular/core/src/linker/view_type';
+import * as import7 from '@angular/core/src/change_detection/change_detection';
+import * as import8 from '@angular/core/src/linker/component_factory';
+import * as import9 from './treeview/tree-view-demo';
+import * as import10 from './treeview/tree-view-demo.ngfactory';
+import * as import11 from '@angular/core/src/metadata/view';
+var renderType_AppComponent_Host = null;
+class _View_AppComponent_Host0 extends import1.AppView {
+    constructor(viewUtils, parentInjector, declarationEl) {
+        super(_View_AppComponent_Host0, renderType_AppComponent_Host, import6.ViewType.HOST, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
+    }
+    createInternal(rootSelector) {
+        this._el_0 = this.selectOrCreateHostElement('app-root', rootSelector, null);
+        this._appEl_0 = new import2.AppElement(0, null, this, this._el_0);
+        var compView_0 = viewFactory_AppComponent0(this.viewUtils, this.injector(0), this._appEl_0);
+        this._AppComponent_0_4 = new import3.AppComponent();
+        this._appEl_0.initComponent(this._AppComponent_0_4, [], compView_0);
+        compView_0.create(this._AppComponent_0_4, this.projectableNodes, null);
+        this.init([].concat([this._el_0]), [this._el_0], [], []);
+        return this._appEl_0;
+    }
+    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
+        if (((token === import3.AppComponent) && (0 === requestNodeIndex))) {
+            return this._AppComponent_0_4;
+        }
+        return notFoundResult;
+    }
+}
+function viewFactory_AppComponent_Host0(viewUtils, parentInjector, declarationEl) {
+    if ((renderType_AppComponent_Host === null)) {
+        (renderType_AppComponent_Host = viewUtils.createRenderComponentType('', 0, null, [], {}));
+    }
+    return new _View_AppComponent_Host0(viewUtils, parentInjector, declarationEl);
+}
+export const AppComponentNgFactory = new import8.ComponentFactory('app-root', viewFactory_AppComponent_Host0, import3.AppComponent);
 const styles_AppComponent = [];
 var renderType_AppComponent = null;
 class _View_AppComponent0 extends import1.AppView {
     constructor(viewUtils, parentInjector, declarationEl) {
-        super(_View_AppComponent0, renderType_AppComponent, import7.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
+        super(_View_AppComponent0, renderType_AppComponent, import6.ViewType.COMPONENT, viewUtils, parentInjector, declarationEl, import7.ChangeDetectorStatus.CheckAlways);
     }
     createInternal(rootSelector) {
         const parentRenderNode = this.renderer.createViewRoot(this.declarationAppElement.nativeElement);
@@ -25,12 +54,12 @@ class _View_AppComponent0 extends import1.AppView {
         this._text_1 = this.renderer.createText(this._el_0, '', null);
         this._text_2 = this.renderer.createText(parentRenderNode, '\n\n', null);
         this._el_3 = this.renderer.createElement(parentRenderNode, 'treeview', null);
-        this._appEl_3 = new import3.AppElement(3, null, this, this._el_3);
-        var compView_3 = import9.viewFactory_TreeViewDemo0(this.viewUtils, this.injector(3), this._appEl_3);
-        this._TreeViewDemo_3_4 = new import4.TreeViewDemo();
+        this._appEl_3 = new import2.AppElement(3, null, this, this._el_3);
+        var compView_3 = import10.viewFactory_TreeViewDemo0(this.viewUtils, this.injector(3), this._appEl_3);
+        this._TreeViewDemo_3_4 = new import9.TreeViewDemo();
         this._appEl_3.initComponent(this._TreeViewDemo_3_4, [], compView_3);
         compView_3.create(this._TreeViewDemo_3_4, [], null);
-        this._expr_0 = import8.uninitialized;
+        this._expr_0 = import7.UNINITIALIZED;
         this.init([], [
             this._el_0,
             this._text_1,
@@ -40,15 +69,15 @@ class _View_AppComponent0 extends import1.AppView {
         return null;
     }
     injectorGetInternal(token, requestNodeIndex, notFoundResult) {
-        if (((token === import4.TreeViewDemo) && (3 === requestNodeIndex))) {
+        if (((token === import9.TreeViewDemo) && (3 === requestNodeIndex))) {
             return this._TreeViewDemo_3_4;
         }
         return notFoundResult;
     }
     detectChangesInternal(throwOnChange) {
         this.detectContentChildrenChanges(throwOnChange);
-        const currVal_0 = import5.interpolate(1, '\n  ', this.context.title, '\n');
-        if (import5.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
+        const currVal_0 = import4.interpolate(1, '\n  ', this.context.title, '\n');
+        if (import4.checkBinding(throwOnChange, this._expr_0, currVal_0)) {
             this.renderer.setText(this._text_1, currVal_0);
             this._expr_0 = currVal_0;
         }
@@ -57,36 +86,7 @@ class _View_AppComponent0 extends import1.AppView {
 }
 export function viewFactory_AppComponent0(viewUtils, parentInjector, declarationEl) {
     if ((renderType_AppComponent === null)) {
-        (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/angular2-offline-compiler/src/app/app.component.html', 0, import10.ViewEncapsulation.None, styles_AppComponent));
+        (renderType_AppComponent = viewUtils.createRenderComponentType('/Users/tor/Development/angular2-offline-compiler/src/app/app.component.html', 0, import11.ViewEncapsulation.None, styles_AppComponent, {}));
     }
     return new _View_AppComponent0(viewUtils, parentInjector, declarationEl);
 }
-var renderType_AppComponent_Host = null;
-class _View_AppComponent_Host0 extends import1.AppView {
-    constructor(viewUtils, parentInjector, declarationEl) {
-        super(_View_AppComponent_Host0, renderType_AppComponent_Host, import7.ViewType.HOST, viewUtils, parentInjector, declarationEl, import8.ChangeDetectorStatus.CheckAlways);
-    }
-    createInternal(rootSelector) {
-        this._el_0 = this.selectOrCreateHostElement('app-root', rootSelector, null);
-        this._appEl_0 = new import3.AppElement(0, null, this, this._el_0);
-        var compView_0 = viewFactory_AppComponent0(this.viewUtils, this.injector(0), this._appEl_0);
-        this._AppComponent_0_4 = new import2.AppComponent();
-        this._appEl_0.initComponent(this._AppComponent_0_4, [], compView_0);
-        compView_0.create(this._AppComponent_0_4, this.projectableNodes, null);
-        this.init([].concat([this._el_0]), [this._el_0], [], []);
-        return this._appEl_0;
-    }
-    injectorGetInternal(token, requestNodeIndex, notFoundResult) {
-        if (((token === import2.AppComponent) && (0 === requestNodeIndex))) {
-            return this._AppComponent_0_4;
-        }
-        return notFoundResult;
-    }
-}
-function viewFactory_AppComponent_Host0(viewUtils, parentInjector, declarationEl) {
-    if ((renderType_AppComponent_Host === null)) {
-        (renderType_AppComponent_Host = viewUtils.createRenderComponentType('', 0, null, []));
-    }
-    return new _View_AppComponent_Host0(viewUtils, parentInjector, declarationEl);
-}
-export const AppComponentNgFactory = new import11.ComponentFactory('app-root', viewFactory_AppComponent_Host0, import2.AppComponent);
